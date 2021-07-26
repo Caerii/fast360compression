@@ -61,6 +61,9 @@ Fourth, in order to extract DCT information from the macroblock prints, you must
 It might look something like this:
 ./x264 -o /home/alif/encoder/x264/x264/x264/try.264 akiyo_176x144.yuv > /home/alif/Desktop/dctTest.txt
 
+Fifth, to run the preprocessing, just follow the comments in each of the preprocessor code files. These are simple scripts to structure data in ways to ingest into the machine learning model.
+
+Sixth, machinelearning.py is what you will want to run in order to attempt to train your own data and create your own linear regression model. In order to use it you must make some modifications, you must change the names of the DCT and Saliency files to whatever files that you have as input for the model. You will also have to split the "18000" value to half of the lines of whatever dataset you have. For instance, our dataset has 36,000 lines, so we split it into a training, and a testing dataset, which means two 18,000 line datasets. If your dataset is 500,000 lines total, you want to split it into 250,000 and 250,000. You may also decide to use some kind of for loop to ingest large amounts of data, or keep all of the data in one text file, which requires specific adjustments up to you.
 
 ---------------------------------------------------------------
 Biggest problems encountered:
