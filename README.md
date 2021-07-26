@@ -45,9 +45,10 @@ Third, you will want to run the encoder to make sure that it works properly with
 
 Run the following commands to test that this works:
 
-make //use this in ~/encoder/x264/x264/x264 in order to compile the encoder
+make //use this in ~/encoder/x264/x264/x264 in order to compile the source code of the encoder
 
-sudo make install //run this right after make
+sudo make install //run this right after make (make install basically runs and creates an executable based on the make file,
+the executable file will be stored in the /usr/local/bin/x264)
 
 cp /usr/local/bin/x264 /home/YOUR_DIRECTORY_NAME/encoder/x264/x264/x264 //you want to copy the executable that is generated in the usr bin into your encoder files
 
