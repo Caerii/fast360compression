@@ -66,7 +66,12 @@ Fifth, to run the preprocessing, just follow the comments in each of the preproc
 Sixth, machinelearning.py is what you will want to run in order to attempt to train your own data and create your own linear regression model. In order to use it you must make some modifications, you must change the names of the DCT and Saliency files to whatever files that you have as input for the model. You will also have to split the "18000" value to half of the lines of whatever dataset you have. For instance, our dataset has 36,000 lines, so we split it into a training, and a testing dataset, which means two 18,000 line datasets. If your dataset is 500,000 lines total, you want to split it into 250,000 and 250,000. You may also decide to use some kind of for loop to ingest large amounts of data, or keep all of the data in one text file, which requires specific adjustments up to you.
 
 ---------------------------------------------------------------
-Biggest problems encountered:
+Biggest problems encountered: 
+>scaling the dataset- we encountered issues with getting large amounts of non-scrambled DCT block information from the encoder for more than one video, we theorize it is because of the multithreading in the encoder that it does not output all of the macroblocks sequentially.
+>Dependencies for the code must be the correct versions for Python3
+>
+
+
 Workflow Issues:
 Data Issues:
 Virtualbox issues:
