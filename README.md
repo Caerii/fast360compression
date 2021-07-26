@@ -67,40 +67,51 @@ Sixth, machinelearning.py is what you will want to run in order to attempt to tr
 
 ---------------------------------------------------------------
 Biggest problems encountered: 
->scaling the dataset- we encountered issues with getting large amounts of non-scrambled DCT block information from the encoder for more than one video, we theorize it is because of the multithreading in the encoder that it does not output all of the macroblocks sequentially.
->Dependencies for the code must be the correct versions for Python3
->
+Scaling the dataset- we encountered issues with getting large amounts of non-scrambled DCT block information from the encoder for more than one video, we theorize it is because of the multithreading in the encoder that it does not output all of the macroblocks sequentially.
 
+Dependencies for the code must be the correct versions for Python3
+
+The Saliency Models that we tested, many of them malfunctioned when we ran them through the terminal, some of them were missing instructions.
 
 Workflow Issues:
+Debugging the C code could at times be difficult because it required finding obscure documentation on the encoder details.
+
 Data Issues:
+Figuring out how to structure the data in a way where it could be used by the machine learning model properly was a challenge, but we figured out that the data just needs to be in the right shape and then there will be no issues
+
 Virtualbox issues:
+We used a lot more disk space than we thought we would.
 
-Future Research:
+Some of the saliency models corrupted the environment and forced a restart from scratch.
 
-Blog Posts and why they are useful:
+At one point there was a black screen that required us to allocate a second core to the virtual box.
 
 Future Milestones:
+Expand the dataset to hundreds of videos so that the machine learning model becomes far more accurate.
+
+Add additional features to the prediction.
+
+Add more ways to automatically check how much the error is from the true saliency scores.
+
+Collect experimental data from test subjects.
+
+Future Research:
+Test out 360 video data collection with a 360 camera and collect data on the extremes of usage for the cameras.
+
+Playback compressed videos on 360 headsets and compare to various different compression schemes.
+
+Try to design a way to do real time streaming compression using user saliency.
 
 Images folder:
 poster.png
 
 Advice for future REU researchers:
 -Set milestones, set concrete achievable goals, delegate tasks, make sure that everyone knows what is going on, create documentation along the way, COMMENT YOUR CODE
--
+-Communicate as much as possible with your team members, find out when they get stuck, discuss all problems
+-Try out different ways of doing things, don't always go with the first thing you think of
+-Find out the ways in which you would be wrong, and always try to qualify your methodology, have a reason for it
+-Datasets take a lot more time than you think to clean up!
+-Take note of the time that you have to get certain goals done on time and on task
 
 The datasets that we used were gotten from:
-put the link to the wildlife dataset here
-
-
-What we need for documentation:
--Map of the workflow. label figures.
--Code, and what each of the codes do, like a walkthrough
--Explanations of what all the parts are useful for.
--biggest problems in the workflow
--what needs to be done to expand the research
--github repository for our code
--readme file
--all of the datasets
--sources cited
--blog posts
+//put the link to the wildlife dataset here
