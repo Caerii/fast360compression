@@ -28,6 +28,7 @@ MATLAB is
 
 
 The code that we modified in the x264 source code + problems:
+encoder.c, x264.c, common.h, macroblock.c, ratecontrol.c
 
 The datasets that we used were gotten from:
 
@@ -44,7 +45,7 @@ Blog Posts and why they are useful:
 
 Future Milestones:
 
-Figures folder:
+Images folder:
 poster.png
 
 Advice for future REU researchers:
